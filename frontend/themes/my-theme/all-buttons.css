@@ -1,0 +1,141 @@
+vaadin-button.save-button{
+    color: white;
+    background-color: var(--light-purple-color-90pct);
+    cursor: pointer;
+}
+
+vaadin-button.dark-green-background-button{
+    color: white;
+    background-color: var(--dark-green-color);
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+vaadin-button.blue-button{
+    color: white;
+    background-color:var(--blue-color);
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+vaadin-button.dark-green-button{
+    background-color: var(--dark-green-color);
+    color: white;
+    cursor: pointer;
+}
+
+vaadin-button.dark-green-color-button{
+    color: var(--dark-green-color);
+    font-size:25px;
+    background: none;
+    cursor: pointer;
+}
+
+/* Estilo del botón al pasar el ratón */
+vaadin-button.interactive-button {
+    background:none;
+    font-size:20px;
+    height:25px;
+    width:20px;
+    color: var(--dark-green-color); /* Define aquí el color que quieras al hacer hover */
+}
+
+/* Estilo del botón al pasar el ratón */
+vaadin-button.interactive-button:hover {
+    background: var(--light-plus-gray-color); /* Define aquí el color que quieras al hacer hover */
+}
+
+vaadin-date-picker-overlay [slot="today-button"]{
+    color: var(--lumo-primary-color);
+    cursor: pointer;
+}
+vaadin-date-picker-overlay [slot="cancel-button"]{
+    color:var(--lumo-error-color);
+    cursor: pointer;
+}
+
+vaadin-button.dark-green-50p-pct-button{
+    color: white;
+    background-color: var(--dark-green-color-50pct);
+    cursor: pointer;
+}
+
+vaadin-button.yellow-color-button{
+    color: white;
+    width:30px;
+    height: 30px;
+    background-color: var(--yellow-color);
+    cursor: pointer;
+}
+
+vaadin-button.primary-color-button{
+    color: white;
+    background-color: var(--light-purple-color-90pct);
+    cursor: pointer;
+}
+
+vaadin-button.angle-right-button{
+    color: var(--dark-gray-color);
+    background: none;
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+vaadin-button.dark-gray-color-button{
+    background: var(--dark-gray-color);
+    color: white;
+    cursor: pointer;
+}
+
+vaadin-button.help-button{
+    color: var(--dark-gray-color);
+    background: none;
+    width:30px;
+    height: 30px;
+    font-size:25px;
+    cursor: pointer;
+}
+
+vaadin-button.lumo-error-color-background-button{
+    color: white;
+    background-color: var(--lumo-error-color);
+    width:30px;
+    height: 30px;
+    font-size:17px;
+    cursor: pointer;
+}
+
+vaadin-button.lumo-error-color-disable-background-button{
+    color: white;
+    background-color: pink;
+    width:30px;
+    height: 30px;
+    font-size:12px;
+    cursor: pointer;
+}
+
+vaadin-button.lumo-primary-color-background-button{
+    color: white;
+    background-color: var(--lumo-primary-color);
+    width:30px;
+    height: 30px;
+    font-size:15px;
+    cursor: pointer;
+}
+
+vaadin-button.reload-code-button{
+    background: orange;
+    width:25px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+vaadin-confirm-dialog-overlay > [slot="cancel-button"]{
+    color: var(--lumo-error-color);
+    cursor: pointer;
+}

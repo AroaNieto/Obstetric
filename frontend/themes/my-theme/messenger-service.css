@@ -1,0 +1,89 @@
+/* Cabecera del mensaje del sistema de mensajería */
+.header-messages {
+    padding: 20px;
+    background-color: var(--light-green-color-20pct);
+    border-bottom: 1px solid #ccc;
+}
+
+/* Cada Sistema de mensajería abierto, tanto activo como inactivo */
+.messenger-service-item {
+    border-bottom: 2px solid #E0E0E0;
+    padding: 10px;
+    background: var(--plus-light-gray-color);
+}
+
+/* Sistema de mensajería activo */
+.messenger-service-active {
+    border-bottom: 2px solid #E0E0E0;
+    padding: 10px;
+    background: var(--light-green-color-20pct);
+}
+
+/* Sistema de mensajería activo (hover) */
+.enable-link:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+/* Sistema de mensajería con mensajes pendientes */
+.suffix-inbox {
+    background-color: var(--light-green-color);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+/* Sistema de mensajería activo */
+.enable-link {
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Sistema de mensajería inactivo */
+.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Estilos para el componente Vaadin */
+vaadin-message {
+    font-size: 1.2em;
+}
+
+vaadin-message > vaadin-avatar {
+    width: 50px;
+    height: 50px;
+}
+
+/* Hacer que el contenedor sea flexible en función del tamaño del contenedor padre */
+.open-chat-vl {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 600px) {
+    .open-chat-vl {
+        padding: 5px;
+    }
+
+    .messenger-service-item {
+        font-size: 14px;
+    }
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 600px) {
+    .open-chat-vl {
+        padding: 15px;
+    }
+
+    .messenger-service-item {
+        font-size: 16px;
+    }
+}

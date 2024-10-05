@@ -1,0 +1,28 @@
+/* Estilo general de la vista */
+.choose-appointment-view {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título del formulario */
+.form-title {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo del layout del formulario */
+.form-layout {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del layout horizontal del formulario */
+.form-layout-hl {
+    justify-content: center;
+}

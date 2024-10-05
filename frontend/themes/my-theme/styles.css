@@ -1,0 +1,137 @@
+@import "theme-editor.css";
+@import "profile-user.css";
+@import "all-buttons.css";
+@import "menu-bar.css";
+@import "login-form.css";
+@import "filters-grid.css";
+@import "align-items.css";
+@import "window-help.css";
+@import "calendar.css";
+@import "messenger-service.css";
+@import "report.css";
+@import "public.css";
+@import "choose-appointment.css";
+
+html {
+  --lumo-primary-color:  #ac93c5;
+  --lumo-primary-color-20pct: #ac93c533; /* Morado con opacidad del 20% */
+  --lumo-primary-color-50pct: #ac93c580; /* Morado con opacidad del 50% */
+  --lumo-primary-color-10pct:  rgba(199,155,242,0.1); /* Morado con opacidad del 10% */
+  --vaadin-input-field-icon-color: #026C51;
+  --lumo-contrast: #262626; /* Colores de cabecera */
+}
+
+:root{
+    --light-purple-color-80pct: #ac93c580; /* Morado con opacidad del 80% */
+    --light-purple-color-90pct:#ac93c5E6; /* Morado con opacidad del 90% */
+    --light-purple-color-70pct: #ac93c5B3; /* Morado con opacidad del 70% */
+
+    --dark-green-color: #026C51; /* Verde oscuro*/
+    --dark-green-color-20pct: #026C5133; /* Verde con opacidad del 20% */
+
+    --dark-gray-color: #404040; /* Gris oscuro*/
+    --medium-gray-color:#BFBFBF; /* Gris medio */
+    --plus-light-gray-color:#F9F9F9;
+    --light-gray-color:#D9D9D9; /* Gris claro */
+    --light-plus-gray-color:#E9E9E9;
+    --yellow-color:#EDDB6B; /* Amarillo */
+    --yellow-color-60pct: #F2E6C299; /* Amarillo con opacidad del 60% */
+
+    --light-green-color: #77C29F; /* Verde claro*/
+    --light-green-color-20pct: #77C29F33; /* Verde claro*/
+    --pink-color: #F2AED4;
+    --pink-color-50pct: #F2AED480; /* Rosa con opacidad del 50% */
+    --blue-color: #329AE1;
+}
+
+a[highlight] {
+    font-weight: bold;
+}
+
+vaadin-grid::part(header-cell){
+   --lumo-base-color: white;
+}
+
+vaadin-grid{
+   --lumo-base-color: #f5f5f5;
+}
+
+vaadin-grid::part(selected-row-cell){
+    --lumo-base-color: var(--lumo-primary-color-10pct);
+}
+
+vaadin-grid::part(even-row-cell){
+    background:#dd;
+}
+
+.color-title{
+    color: var(--dark-gray-color);
+}
+
+.color-dark-green{
+    color:var(--dark-green-color);
+}
+
+vaadin-app-layout::part(navbar) {
+    background: var(--light-purple-color-80pct);
+    height:80px;
+}
+
+vaadin-app-layout::part(drawer) {
+    background: var(--light-purple-color-80pct);
+    margin-top: 3px;
+    padding-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.user-header-template{
+     margin-top: 3px;
+     background: var(--lumo-primary-color-50pct);
+}
+
+vaadin-app-layout[drawer-opened]::part(drawer) {
+    display: block;
+}
+
+vaadin-app-layout[overlay]::part(drawer) {
+    display: none;
+}
+
+vaadin-side-nav-item[current]{ /*Elemento actual del navbar*/
+    background-color: var(--lumo-success-color-10pct);
+}
+
+vaadin-side-nav-item::part(link){
+    color: var(--lumo-body-text-color);
+}
+
+.title-dark-green{
+    color:var(--dark-green-color);
+    font-weight: bold;
+}
+
+.create-link{
+    font-size:var(--lumo-font-size-l);
+    color:var(--lumo-header-text-color);
+    margin:var(--lumo-space-m);
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.label-error{
+    color: var(--lumo-error-text-color);
+}
+
+.upload-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+

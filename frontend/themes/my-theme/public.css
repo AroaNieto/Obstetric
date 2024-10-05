@@ -1,0 +1,110 @@
+.principal-view{
+    background-color:rgba(95, 95, 95, 0.2);
+}
+
+a.start-link {
+    background-color: var(--light-purple-color-70pct);
+    padding:10px;
+    border-radius:var(--lumo-border-radius-l);
+    color:white;
+    cursor: pointer;
+}
+
+a[highlight].start-link {
+    color:white;
+    background-color: var(--lumo-primary-color);
+    font-weight: 500;
+}
+
+a.start-link:hover {
+    background-color: var(--lumo-primary-color); /* Cambia esto al color que desees en el hover */
+    color: white; /* Cambia esto al color que desees en el hover */
+}
+
+.newsletter-background{
+    background-image:url('themes/my-theme/photos/pregnantContentTemplate.jpg');
+    background-size: cover;
+    margin-top:3px;
+    padding-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom:30px;
+}
+
+.title-newsletter{
+    text-align: center;
+    padding-bottom:20px;
+    color: white;
+    font-weight: 300;
+}
+
+.header-template{
+    font-size: var(--lumo-font-size-xxl);
+    color: #8d7dba;
+    font-weight: 450;
+}
+vaadin-tab.articles-tab {
+    cursor: pointer;
+    margin: 1em;
+}
+
+vaadin-tab[active].articles-tab, vaadin-tab[selected].articles-tab,vaadin-tab[focused].articles-tab {
+      color: var(--lumo-contrast);
+}
+
+.whoWeAre-Vl {
+    padding-left: 80px;
+    padding-right: 80px;
+    background: url('themes/my-theme/photos/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.background-gray-color {
+    background: var(--plus-light-gray-color);
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 1050px) {
+    .responsive-layout {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    whoWeAre-Vl {
+       background: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .whoWeAre-Vl {
+       background: none;
+       padding-left: 20px;
+       padding-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .whoWeAre-Vl {
+       background: none;
+       background-size: cover;
+       padding-left: 20px;
+       padding-right: 20px;
+    }
+    .header-template{
+        font-size: var(--lumo-font-size-l);
+        color: #8d7dba;
+        font-weight: 450;
+    }
+
+}
+

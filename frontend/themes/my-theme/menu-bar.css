@@ -1,0 +1,13 @@
+vaadin-menu-bar-button > vaadin-menu-bar-item > vaadin-icon {
+    color: var(--dark-gray-color);
+}
+
+vaadin-menu-bar-button {
+    background: transparent;
+    box-shadow: none;
+}
+
+vaadin-menu-bar-button:hover {
+    background: transparent;
+    color: var(--lumo-primary-color);
+}

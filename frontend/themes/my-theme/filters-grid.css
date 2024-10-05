@@ -1,0 +1,15 @@
+/* Pantalla con un MÁXIMO DE 1300*/
+@media all and (max-width: 1300px) {
+    .text-field-1300{
+       display:none;
+    }
+
+}
+
+/* Pantalla con un MÁXIMO DE 1100*/
+@media all and (max-width: 1100px) {
+
+    .text-field-1100{
+       display:none;
+    }
+}

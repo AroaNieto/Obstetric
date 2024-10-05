@@ -1,0 +1,38 @@
+vaadin-login-form-wrapper, register-form-wrapper {
+    max-width: none;
+    width: 30em;
+}
+
+vaadin-login-form [slot="forgot-password"] {
+    color: var(--dark-green-color);
+}
+
+vaadin-login-form-wrapper vaadin-password-field::part(reveal-button){
+      color: var(--dark-green-color);
+}
+
+vaadin-tab[active].white-tab,
+vaadin-tab[selected].white-tab,
+vaadin-tab[focused].white-tab
+{
+    color:#ac93c5;
+}
+
+vaadin-tab.white-tab {
+    font-size: 1.5em;
+}
+
+
+@media all and (max-width: 1300px) {
+  .template-view-suggestions-start{
+     display: none;
+  }
+
+  vaadin-tab.white-tab {
+      font-size: 1.8em;
+  }
+  vaadin-login-form-wrapper, register-form-wrapper {
+      max-width: none;
+      width: 40em;
+  }
+}

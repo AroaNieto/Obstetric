@@ -1,0 +1,59 @@
+
+.data-personal-info {
+    color: var(--dark-gray-color);
+    font-weight: 660;
+}
+
+.data-container{
+    margin-top:20px
+}
+
+.avatar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.avatar-container:hover .avatar-overlay {
+    opacity:12;
+}
+
+.square-box {
+    border-top: 2.5px solid var(--dark-green-color-50pct); /* Morado en la parte superior */
+    border-left: 1px solid var(--lumo-contrast-10pct);
+    border-right: 1px solid var(--lumo-contrast-10pct);
+    border-radius: var(--lumo-border-radius);
+    padding: var(--lumo-space-m);
+    box-shadow: var(--lumo-box-shadow-s);
+    background-color: #F2F0F0;
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+}
+
+.margin-title-dark-green{
+    margin-bottom:10px;
+}
+
+@media (max-width: 600px) {
+    .square-box {
+        margin-bottom: var(--lumo-space-m);
+    }
+
+}
